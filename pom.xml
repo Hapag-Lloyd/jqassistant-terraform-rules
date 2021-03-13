@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.hlag</groupId>
+	<artifactId>jqassistant.terraform-rules</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<name>jQAssistant Terraform Rules Plugin</name>
+	<url>https://github.com/Hapag-Lloyd/jqassistant-terraform-rules</url>
+
+	<developers>
+		<developer>
+			<id>kayman-mk</id>
+			<name>Matthias Kay</name>
+			<email>github@matthiaskay.de</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git@github.com:Hapag-Lloyd/jqassistant-terraform-rules.git</connection>
+		<developerConnection>scm:git:git@github.com:Hapag-Lloyd/jqassistant-terraform-rules.git</developerConnection>
+		<url>https://github.com/Hapag-Lloyd/jqassistant-terraform-rules</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<downloadSources>true</downloadSources>
+		<downloadJavadocs>true</downloadJavadocs>
+
+		<jqassistant.version>1.8.0</jqassistant.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- Test dependencies -->
+		<dependency>
+			<groupId>org.jqassistant.contrib.plugin</groupId>
+			<artifactId>jqassistant-hcl-plugin</artifactId>
+			<version>0.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.buschmais.jqassistant.core</groupId>
+			<artifactId>store</artifactId>
+			<version>1.8.0</version>
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.buschmais.jqassistant.core</groupId>
+			<artifactId>plugin</artifactId>
+			<version>1.8.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.buschmais.jqassistant.plugin</groupId>
+			<artifactId>common</artifactId>
+			<type>test-jar</type>
+			<version>1.8.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.buschmais.jqassistant.plugin</groupId>
+			<artifactId>java</artifactId>
+			<type>test-jar</type>
+			<version>1.8.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.buschmais.jqassistant.plugin</groupId>
+			<artifactId>java</artifactId>
+			<version>1.8.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.buschmais.jqassistant.neo4jserver</groupId>
+			<artifactId>neo4jv3</artifactId>
+			<version>1.8.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.5.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<version>3.14.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>java-hamcrest</artifactId>
+			<version>2.0.0.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.8.0-beta4</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>
+
